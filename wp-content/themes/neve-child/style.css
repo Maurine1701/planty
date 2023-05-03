@@ -8,3 +8,67 @@ Description: theme enfant de Neve
 Tags: planty, boisson a base de plante
 Version: 1.0.0
 */
+
+/*général*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Header */
+
+/* hauteur du header */
+
+.hfg-slot.right,
+.hfg-slot.left {
+    height: 80px;
+}
+
+/* hover menu */
+.nav-menu-primary :hover {
+    font-weight: bolder;
+    font-size: 10.5px;
+}
+
+/* bouton commander */
+/* enleve la marge de droite */
+
+.builder-item {
+    padding-right: 0px;
+}
+
+/* règle la heuteur et la largeur du bouton */
+
+.component-wrap,
+.component-wrap a {
+    width: 236px;
+    height: 80px;
+}
+
+/* centre le texte à l'intérieur du bouton */
+
+.component-wrap a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Footer */
+
+.mon-footer {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+}
+
+.mon-footer p {
+    margin: 0;
+}
+
+.mon-footer a {
+    color: #000000;
+}
