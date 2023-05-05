@@ -27,11 +27,12 @@ Version: 1.0.0
 
 /* hover menu */
 .nav-menu-primary :hover {
-    font-weight: bolder;
-    font-size: 10.5px;
+    font-weight: 700;
+    font-size: 13px;
 }
 
 /* bouton commander */
+
 /* enleve la marge de droite */
 
 .builder-item {
@@ -52,6 +53,108 @@ Version: 1.0.0
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/*page accueil*/
+
+/*interlignage section ce qu'ils en pensent*/
+
+.elementor-image-box-description {
+    line-height: 20px;
+}
+
+/* page commande */
+
+/* met en forme compteur de quantité*/
+
+.conteneur-principal-formquantite {
+    display: flex;
+    height: 80px;
+}
+
+.conteneur-principal-formquantite input[type="number"] {
+    display: block !important;
+    height: 67px !important;
+    width: 65px !important;
+    border-radius: 8px 0 0 8px !important;
+    font-size: 20px !important;
+    color: black !important;
+    font-weight: 500 !important;
+    text-align: center !important;
+}
+
+.bouton-quantite {
+    display: flex !important;
+    flex-direction: column !important;
+    height: 67px !important;
+    margin-top: 4px !important;
+}
+
+.bouton-plus,
+.bouton-moins {
+    display: block !important;
+    height: 34px !important;
+    width: 30px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.bouton-plus {
+    border-bottom: solid 1px #FFFFFF !important;
+    border-top-right-radius: 8px !important;
+}
+
+.bouton-moins {
+    border-bottom-right-radius: 8px !important;
+}
+
+.wpcf7-spinner {
+    display: none !important;
+    text-align: center !important;
+
+}
+
+/* enleve les flèches de l'input number */
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    /*autres navigateurs*/
+}
+
+input[type=number] {
+    -moz-appearance: textfield !important;
+    appearance: none;
+    /* Firefox */
+}
+
+/* formulaire de commmande */
+
+.conteneur-principal-formcom {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1230px;
+    margin-top: 55px;
+    margin-bottom: 45px;
+}
+
+.conteneur-infos {
+    width: 46%;
+    border-right: solid 1px #FFFFFF;
+    margin-left: 20px;
+}
+
+.conteneur-livraison {
+    width: 46%;
+    margin-left: 40px;
+}
+
+.titre-commande {
+    color: #FFFFFF;
+    font-family: syne;
+    font-size: 35px;
+    font-weight: 700;
 }
 
 /* Footer */
