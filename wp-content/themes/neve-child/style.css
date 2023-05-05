@@ -26,9 +26,9 @@ Version: 1.0.0
 }
 
 /* hover menu */
-.nav-menu-primary :hover {
+.primary-menu-ul :hover {
     font-weight: 700;
-    font-size: 13px;
+    font-size: 15px;
 }
 
 /* bouton commander */
