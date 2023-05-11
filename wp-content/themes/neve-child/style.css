@@ -195,6 +195,8 @@ input[type=number] {
 
 @media (max-width: 1024px) {
 
+    /*formulaire quantité page commande */
+
     .conteneur-principal-formcom {
         width: 100%;
         display: flex;
@@ -218,15 +220,6 @@ input[type=number] {
         align-items: center;
         margin-top: 30px;
     }
-
-    /*change width du conteneur formulaire
-
-    .e-con.e-con>.e-con-inner>.elementor-widget,
-    .elementor.elementor .e-con>.elementor-widget {
-        width: 100%;
-    }
-
-    /*formulaire quantité page commande */
 
     .conteneur-principal-formquantite input[type="number"] {
         height: 40px !important;
@@ -260,32 +253,19 @@ input[type=number] {
 
 @media (max-width: 767px) {
 
+    /*taille image fruits*/
+
     .wpr-grid-image-wrap {
         width: 90%;
         text-align: center;
     }
 
+    /*formulaire commandes*/
+
     .conteneur-principal-formcom {
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
-
-    .titre-commande {
-        font-size: 25px;
-    }
-
-    .conteneur-principal-formquantite {
-        display: flex;
-        height: 80px;
-        width: 100%;
-        justify-content: center;
-    }
-
-    .conteneur-principal-formquantite input[type="number"] {
-        height: 80px !important;
-        width: 100px !important;
-        font-size: 20px !important;
     }
 
     .conteneur-infos {
@@ -304,6 +284,23 @@ input[type=number] {
         flex-direction: column;
         align-items: center;
         margin-top: 30px;
+    }
+
+    .titre-commande {
+        font-size: 25px;
+    }
+
+    .conteneur-principal-formquantite {
+        display: flex;
+        height: 80px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .conteneur-principal-formquantite input[type="number"] {
+        height: 80px !important;
+        width: 100px !important;
+        font-size: 20px !important;
     }
 
     .bouton-quantite {
