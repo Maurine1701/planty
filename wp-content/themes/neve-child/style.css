@@ -70,6 +70,12 @@ Version: 1.0.0
 .conteneur-principal-formquantite {
     display: flex;
     height: 80px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.conteneur-quantite {
+    display: flex;
 }
 
 .conteneur-principal-formquantite input[type="number"] {
@@ -88,6 +94,9 @@ Version: 1.0.0
     flex-direction: column !important;
     height: 67px !important;
     margin-top: 4px !important;
+    margin-right: 30px;
+    line-height: 0;
+
 }
 
 .bouton-plus,
@@ -106,6 +115,13 @@ Version: 1.0.0
 
 .bouton-moins {
     border-bottom-right-radius: 8px !important;
+}
+
+.bouton-ok [type="submit"] {
+    height: 67px;
+    border-radius: 8px !important;
+    width: 140px;
+    margin-top: 4px !important;
 }
 
 .wpcf7-spinner {
@@ -133,21 +149,22 @@ input[type=number] {
 
 .conteneur-principal-formcom {
     display: flex;
-    flex-wrap: wrap;
-    width: 1230px;
+    justify-content: space-between;
     margin-top: 55px;
     margin-bottom: 45px;
+    width: 100%;
 }
 
 .conteneur-infos {
-    width: 46%;
+    width: 50%;
     border-right: solid 1px #FFFFFF;
-    margin-left: 20px;
+    padding-right: 40px;
+
 }
 
 .conteneur-livraison {
-    width: 46%;
-    margin-left: 40px;
+    width: 50%;
+    padding-left: 40px;
 }
 
 .titre-commande {
@@ -174,4 +191,142 @@ input[type=number] {
 
 .mon-footer a {
     color: #000000;
+}
+
+@media (max-width: 1024px) {
+
+    .conteneur-principal-formcom {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .conteneur-infos {
+        width: 100%;
+        border-right: none;
+        padding-right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .conteneur-livraison {
+        width: 100%;
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    /*change width du conteneur formulaire
+
+    .e-con.e-con>.e-con-inner>.elementor-widget,
+    .elementor.elementor .e-con>.elementor-widget {
+        width: 100%;
+    }
+
+    /*formulaire quantité page commande */
+
+    .conteneur-principal-formquantite input[type="number"] {
+        height: 40px !important;
+        width: 50px !important;
+        font-size: 15px !important;
+    }
+
+    .bouton-plus,
+    .bouton-moins {
+        height: 20px !important;
+        width: 20px !important;
+    }
+
+    .bouton-quantite {
+        margin-right: 10px;
+    }
+
+    .bouton-ok [type="submit"] {
+        height: 40px;
+        width: 80px;
+    }
+
+    .titre-commande {
+        color: #FFFFFF;
+        font-family: syne;
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    .wpr-grid-image-wrap {
+        width: 90%;
+        text-align: center;
+    }
+
+    .conteneur-principal-formcom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .titre-commande {
+        font-size: 25px;
+    }
+
+    .conteneur-principal-formquantite {
+        display: flex;
+        height: 80px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .conteneur-principal-formquantite input[type="number"] {
+        height: 80px !important;
+        width: 100px !important;
+        font-size: 20px !important;
+    }
+
+    .conteneur-infos {
+        width: 100%;
+        border-right: none;
+        padding-right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .conteneur-livraison {
+        width: 100%;
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    .bouton-quantite {
+        display: flex !important;
+        flex-direction: column !important;
+        height: 80px !important;
+        margin-top: 4px !important;
+        margin-right: 20px;
+    }
+
+    .bouton-plus,
+    .bouton-moins {
+        display: block !important;
+        height: 40px !important;
+        width: 45px !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .bouton-ok [type="submit"] {
+        height: 80px;
+        width: 140px;
+        font-size: 20px;
+    }
+
 }
