@@ -6,8 +6,6 @@ add_action( 'wp_enqueue_scripts', 'neve_enqueue_styles' );
 function neve_enqueue_styles(){ 
     wp_enqueue_style( 'neve-child-style', get_stylesheet_uri(), array( 'neve-style' ), filemtime(get_stylesheet_directory()) . '/style.css'); }
 
-// END ENQUEUE PARENT ACTION
-
 /* La fonction wpb_admin_menu prend deux arguments : $items (les éléments du menu de navigation )et $args (tableau associatif contenant les options/paramètre du menu: theme_location; l'id du menu; etc)*/
 add_filter( 'wp_nav_menu_items', 'wpb_admin_menu', 10, 2 );
 function wpb_admin_menu( $items, $args ) {
